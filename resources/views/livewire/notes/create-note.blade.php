@@ -40,9 +40,8 @@ new class extends Component {
             type="email" />
         <x-input icon="calendar" wire:model="noteSendDate" label="Send Date" type="date" />
         <div class="pt-4">
-            <button wire:click="submit" class="px-4 py-2 mt-6 text-white rounded bg-rose-500 hover:bg-rose-600"
-                right-icon="calendar" spinner>Schedule
-                Note</button>
+            <button type="submit" class="px-4 py-2 mt-6 text-white rounded bg-rose-500 hover:bg-rose-600"
+                right-icon="calendar" spinner>Schedule Note</button>
         </div>
         <x-errors />
     </form>

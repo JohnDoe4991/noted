@@ -10,8 +10,12 @@ class Note extends Model
 {
     use HasFactory, HasUuids;
 
-    protected $guarder = [
-        'id'
+    protected $guarded = [
+        'id',
+    ];
+
+    protected $casts = [
+        'is_published' => 'boolean',
     ];
 
     public function user()
